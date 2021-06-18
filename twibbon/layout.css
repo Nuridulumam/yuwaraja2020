@@ -1,0 +1,111 @@
+
+.canvas-container{
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    overflow-x: hidden!important;
+}
+.canvas-container canvas{
+    width: 266px !important; 
+    height: 266px !important; 
+    border: 3px solid #263A59;
+    overflow-x: hidden!important;
+
+}
+.tombol{
+    width: 303px;
+    position: absolute;
+    top: 320px;
+    padding: 1em;
+}
+
+
+.control, .about{
+    padding: 1em;
+}
+
+.canvas-padding{
+padding: 1em;
+overflow-x: hidden!important;
+}
+.editor{
+    /*background: rgb(225, 243, 245);*/
+    height: 450px;
+    position: relative;
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;
+    z-index: 1000!important
+  
+    /* z-index: 0; */
+}
+
+@media screen and (max-width: 425px){
+    .canvas-padding{
+padding: 1em;
+overflow-x: unset!important;
+}
+.editor{
+    /*background: rgb(225, 243, 245);*/
+    height: 450px;
+    position: relative;
+    overflow-x: unset!important;
+    overflow-y: unset!important;
+    left: -50px;
+  
+  
+}
+}
+.about{
+    background: rgb(255, 231, 16);
+}
+.about p{
+    text-indent: 1em;
+    text-align: justify;
+}
+.control p{
+    text-align: justify;
+    text-indent: 1em;
+}
+.control{
+    /* position: relative;
+    z-index: 2; */
+    background: rgb(225, 243, 245);
+}
+
+/* .tittle img{
+    width: 80px;
+    
+} */
+
+.mdl-button--file input {
+    cursor: pointer;
+    height: 100%;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    z-index: 4;
+  }
+  
+  .mdl-textfield--file .mdl-textfield__input {
+    box-sizing: border-box;
+    width: calc(100% - 32px);
+  }
+  .mdl-textfield--file .mdl-button--file {
+    right: 0;
+  }
+
+@media(min-width: 700px){
+    .editor{
+        width: 300px;
+    
+    }
+    .headline{
+        text-align: left;
+    }
+    .control{
+        grid-column: 2/4
+    }
+
+}
